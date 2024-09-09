@@ -16,15 +16,25 @@ namespace Metod
             return Math.Max(Math.Max(a, b), c);
         }
        */
-        static double Ctg(double a)
+        /* static double Ctg(double a)
+         {
+           return (Math.Cos(a) / Math.Sin(a));
+         }*/
+        static int Massiv(int[] a)
         {
-          return (Math.Cos(a) / Math.Sin(a));
+            return a.Sum();
+        }
+        static int Count(int[] a)
+        {
+            return a.Count();
         }
         static void Main(string[] args)
         {
             /*Max(3, 10, 8);
             Console.WriteLine($"макс число: " + Max(3,5,8));*/
-            Console.WriteLine($"Это реально круто: " + Ctg(10));
+            /*Console.WriteLine($"Это реально круто: " + Ctg(10));*/
+            int[] a = { 1, 2, 3, 4 };
+            Console.WriteLine(Massiv(a) + " " + Count(a));
         }
     }
 }
